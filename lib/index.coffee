@@ -17,8 +17,8 @@ module.exports = (strings) ->
 
   strings.sort (a, b) ->
     a.length > b.length
-
-  firstString = strings.shift()
+  copy = strings.slice 0
+  firstString = copy.shift()
   result = false
 
   substrings = new SubstringIterator firstString
