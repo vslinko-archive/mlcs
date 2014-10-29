@@ -38,3 +38,12 @@ describe "mlcs()", ->
 
     for strings in tests
       expect(mlcs(strings)).to.be.false
+  it "should not change Array which is passed as a argument", ->
+    strings = [
+        "123"
+        "456"
+        "789"
+    ]
+    copy = strings.slice 0
+    mlcs strings
+    expect(strings).to.deep.equal copy
