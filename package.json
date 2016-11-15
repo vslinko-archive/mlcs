@@ -10,7 +10,7 @@
     "name": "Vyacheslav Slinko"
   , "email": "vyacheslav.slinko@gmail.com"
   }
-, "main": "lib"
+, "main": "dist/index.js"
 , "repository": {
     "type": "git"
   , "url": "git://github.com/vslinko/mlcs.git"
